@@ -74,3 +74,35 @@
     z-index: -1;
   }
 }
+@media only screen and (max-width: 600px) {
+  .container .base .sun {
+    top: -630px;
+    left: -630px;
+  }
+  .container .base .moon {
+    height: 200px;
+    width: 200px;
+  }
+  .container .base .star {
+    top: 50%;
+    left: 17%;
+    animation: rotate 10s ease-in-out infinite;
+  }
+  @keyframes rotate {
+    0% {
+      left: 17%;
+      z-index: 2;
+    }
+    50% {
+      left: 77%;
+      z-index: 2;
+    }
+    60% {
+      z-index: -1;
+    }
+    100% {
+      left: 17%;
+      z-index: -1;
+    }
+  }
+}
